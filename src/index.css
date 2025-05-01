@@ -1,68 +1,478 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0px !important;
+    margin: 0px !important;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+.loginbtn{
+    background-color: #e93a9d;
+    border: none;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 2px 7px !important;
+    margin-right: 50px !important;
+}
+.loginbtn:hover{
+    background-color: white;
+    color: #e93a9d;
+}
+/* for tab and mobile */
+.loginbtns{ 
+    background-color: #e93a9d;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 2px 7px !important;
+}
+.navborder{
+    border:4px solid #e93a9d
+}
+.weddingbanner{
+    width: 100% !important;
+    margin-top: 110px !important;
+}
+.secondbanner{
+    width: 75% !important;
+}
+.wecpara{
+    text-align: justify;
+}
+.bannerRain{
+    background-image: url('../public/images/banner3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+.special{
+    font-size: 80px !important;
+    text-align: center;
+    color: white;
+    letter-spacing: 7px;
+    transform: rotate(353deg);
+    text-shadow: rgb(233, 58, 157) 9px 0px 0px, rgb(233, 58, 157) 8.9445px 0.997944px 0px, rgb(233, 58, 157) 8.77869px 1.98358px 0px, rgb(233, 58, 157) 8.50461px 2.94475px 0px, rgb(233, 58, 157) 8.12565px 3.86961px 0px, rgb(233, 58, 157) 7.64647px 4.74674px 0px, rgb(233, 58, 157) 7.07299px 5.56533px 0px, rgb(233, 58, 157) 6.41227px 6.31528px 0px, rgb(233, 58, 157) 5.67248px 6.98735px 0px, rgb(233, 58, 157) 4.86272px 7.57324px 0px, rgb(233, 58, 157) 3.99299px 8.06573px 0px, rgb(233, 58, 157) 3.07402px 8.45875px 0px, rgb(233, 58, 157) 2.11714px 8.74744px 0px, rgb(233, 58, 157) 1.13414px 8.92825px 0px, rgb(233, 58, 157) 0.137162px 8.99895px 0px, rgb(233, 58, 157) -0.861512px 8.95867px 0px, rgb(233, 58, 157) -1.84956px 8.8079px 0px, rgb(233, 58, 157) -2.8148px 8.5485px 0px, rgb(233, 58, 157) -3.74532px 8.18368px 0px, rgb(233, 58, 157) -4.62965px 7.71792px 0px, rgb(233, 58, 157) -5.45689px 7.15698px 0px, rgb(233, 58, 157) -6.21682px 6.50777px 0px, rgb(233, 58, 157) -6.90009px 5.77831px 0px, rgb(233, 58, 157) -7.49825px 4.97757px 0px, rgb(233, 58, 157) -8.00394px 4.11545px 0px, rgb(233, 58, 157) -8.41092px 3.20258px 0px, rgb(233, 58, 157) -8.71416px 2.2502px 0px, rgb(233, 58, 157) -8.90993px 1.27008px 0px, rgb(233, 58, 157) -8.99582px 0.274291px 0px, rgb(233, 58, 157) -8.97076px -0.72488px 0px, rgb(233, 58, 157) -8.83507px -1.71511px 0px, rgb(233, 58, 157) -8.59041px -2.68419px 0px, rgb(233, 58, 157) -8.23981px -3.62017px 0px, rgb(233, 58, 157) -7.78758px -4.51149px 0px, rgb(233, 58, 157) -7.23931px -5.34718px 0px, rgb(233, 58, 157) -6.60176px -6.11692px 0px, rgb(233, 58, 157) -5.88279px -6.81122px 0px, rgb(233, 58, 157) -5.09127px -7.42152px 0px, rgb(233, 58, 157) -4.23696px -7.94029px 0px, rgb(233, 58, 157) -3.33039px -8.36113px 0px, rgb(233, 58, 157) -2.38275px -8.67885px 0px, rgb(233, 58, 157) -1.40572px -8.88954px 0px, rgb(233, 58, 157) -0.411357px -8.99059px 0px, rgb(233, 58, 157) 0.58808px -8.98077px 0px, rgb(233, 58, 157) 1.58026px -8.86018px 0px, rgb(233, 58, 157) 2.55296px -8.63032px 0px, rgb(233, 58, 157) 3.49417px -8.29402px 0px, rgb(233, 58, 157) 4.39229px -7.85543px 0px, rgb(233, 58, 157) 5.23623px -7.31996px 0px, rgb(233, 58, 157) 6.0156px -6.69422px 0px, rgb(233, 58, 157) 6.72078px -5.98591px 0px, rgb(233, 58, 157) 7.34307px -5.20378px 0px, rgb(233, 58, 157) 7.87479px -4.35748px 0px, rgb(233, 58, 157) 8.3094px -3.45743px 0px, rgb(233, 58, 157) 8.64153px -2.51474px 0px, rgb(233, 58, 157) 8.86709px -1.54104px 0px, rgb(233, 58, 157) 8.98328px -0.548328px 0px;
+}
+.giftbox{
+    margin-top: -100px !important;
+    margin-left: -100px !important;
+}
+.leftrow{
+    background-color: #ebcd9b;
+}
+.rightrow{
+    background-image: url('../public/images/IMAGE14.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.offer{
+    width: 90%;
+}
+.offer h1{
+    font-size: 50px !important;
+    color: white;
+    text-shadow: rgb(0, 0, 0) 6px 0px 0px, rgb(0, 0, 0) 5.91686px 0.995377px 0px, rgb(0, 0, 0) 5.66974px 1.96317px 0px, rgb(0, 0, 0) 5.2655px 2.87655px 0px, rgb(0, 0, 0) 4.71532px 3.71022px 0px, rgb(0, 0, 0) 4.03447px 4.44106px 0px, rgb(0, 0, 0) 3.24181px 5.04883px 0px, rgb(0, 0, 0) 2.35931px 5.51667px 0px, rgb(0, 0, 0) 1.41143px 5.83163px 0px, rgb(0, 0, 0) 0.424423px 5.98497px 0px, rgb(0, 0, 0) -0.574341px 5.97245px 0px, rgb(0, 0, 0) -1.55719px 5.79441px 0px, rgb(0, 0, 0) -2.49688px 5.45578px 0px, rgb(0, 0, 0) -3.36738px 4.96596px 0px, rgb(0, 0, 0) -4.14455px 4.33852px 0px, rgb(0, 0, 0) -4.80686px 3.59083px 0px, rgb(0, 0, 0) -5.33596px 2.74364px 0px, rgb(0, 0, 0) -5.71718px 1.8204px 0px, rgb(0, 0, 0) -5.93995px 0.84672px 0px, rgb(0, 0, 0) -5.99811px -0.150428px 0px, rgb(0, 0, 0) -5.89004px -1.14341px 0px, rgb(0, 0, 0) -5.61874px -2.1047px 0px, rgb(0, 0, 0) -5.19172px -3.00766px 0px, rgb(0, 0, 0) -4.62082px -3.82727px 0px, rgb(0, 0, 0) -3.92186px -4.54081px 0px, rgb(0, 0, 0) -3.11421px -5.12852px 0px, rgb(0, 0, 0) -2.22026px -5.57409px 0px, rgb(0, 0, 0) -1.26477px -5.86518px 0px, rgb(0, 0, 0) -0.274238px -5.99373px 0px, rgb(0, 0, 0) 0.723898px -5.95617px 0px, rgb(0, 0, 0) 1.70197px -5.75355px 0px, rgb(0, 0, 0) 2.63288px -5.39147px 0px, rgb(0, 0, 0) 3.49082px -4.87998px 0px, rgb(0, 0, 0) 4.25202px -4.23324px 0px, rgb(0, 0, 0) 4.89538px -3.46919px 0px, rgb(0, 0, 0) 5.40307px -2.60899px 0px, rgb(0, 0, 0) 5.76102px -1.67649px 0px, rgb(0, 0, 0) 5.95932px -0.697531px 0px;
+}
+.off{
+    font-size: 70px !important;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+.testimonial-card {
+    width: 90%;
+    background-color: transparent; 
+    border-radius: 1rem;
+    padding: 30px !important;
+    margin-bottom: 1.5rem;
+    border: 1px solid #e93a9d;
 }
-a:hover {
-  color: #535bf2;
+.testimonial-img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem; 
+    object-fit: cover;
+    border: 3px solid #f06292;
+    margin-bottom: 14px !important;
+}
+.testimonial-text {
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6; 
+    margin-bottom: .5rem !important; 
+}
+.testimonial-author {
+    color: black; 
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.caro{
+    margin: 5px !important;
+    height: 25px !important;
+    border-radius: 50%;
+    background-color: #e93a9d !important;
+}
+.faq{
+    width: 80% ;
+}
+.accordion-button{
+    background-color: #e93a9d;
+    color:white;
+    padding: 20px !important;
+    font-size: 25px;
+    font-weight: bold;
+}
+.accordion-item{
+    font-size: 20px;
+    text-align: justify;
+    border: none;
+}
+.footer{
+    background-color: #e93a9d;
+}
+.impform{
+    width: 95%;
+    border-color: #e93a9d;
+}
+.impforms{
+    width: 98%;
+    height: 150px;
+    border-color: #e93a9d;
+}
+.subbtn{
+    width: 98%;
+    margin-top: 30px !important;
+    background-color: #e93a9d;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 10px !important;
+    font-weight: bold;
+    font-size: 20px;
+}
+.portaldiv{
+    width: 80%;
+}
+.portaldivs{
+    width: 60%;
+}
+.pack{
+    width: 400px;
+}
+.cardtitle{
+    font-size: 16px !important;
+}
+.cards{
+    height: 850px;
+}
+.payment-container {
+    width: 60% !important;
+    margin: 40px auto;
+}
+.payment-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px !important;
+}
+.payment-subtitle {
+    text-align: center;
+    margin-bottom: 30px!important ;
+    font-size: 0.9rem;
+}
+.payment-section-title {
+    font-weight: bold;
+    margin: 25px 0 15px 0 !important;
+}
+.payment-method {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px !important;
+    margin-bottom: 15px !important;
+}
+.payment-terms {
+    font-size: 0.85rem;
+    margin: 25px 0 !important;
+}
+.confirm-btn {
+    background-color: #ec4899;
+    border: none;
+    padding: 10px 25px !important;
+    border-radius: 25px;
+}
+.confirm-btn:hover {
+    background-color: #d61f85;
+}
+.form-group {
+    margin-bottom: 15px !important;
+}
+.gallery {
+    columns: 3;
+    column-gap: 10px;
+    padding: 15px;
+}
+.gallery-item {
+    break-inside: avoid;
+    margin-bottom: 10px;
+}
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
+
+
+
+@media (min-width:768px) and (max-width:1023px) {
+    .secondbanner{
+        width: 85% !important;
+    }
+    .wecpara{
+        font-size: 11px !important;
+        text-align: justify;
+    }
+    .wechead{
+        font-size: 15px !important;
+    }
+    .wecsub{
+        font-size: 10px !important;
+    }
+    .special{
+        font-size: 40px !important;
+        text-align: center;
+        color: white;
+        letter-spacing: 7px;
+        transform: rotate(-10deg);
+        text-shadow: rgb(233, 58, 157) 9px 0px 0px, rgb(233, 58, 157) 8.9445px 0.997944px 0px, rgb(233, 58, 157) 8.77869px 1.98358px 0px, rgb(233, 58, 157) 8.50461px 2.94475px 0px, rgb(233, 58, 157) 8.12565px 3.86961px 0px, rgb(233, 58, 157) 7.64647px 4.74674px 0px, rgb(233, 58, 157) 7.07299px 5.56533px 0px, rgb(233, 58, 157) 6.41227px 6.31528px 0px, rgb(233, 58, 157) 5.67248px 6.98735px 0px, rgb(233, 58, 157) 4.86272px 7.57324px 0px, rgb(233, 58, 157) 3.99299px 8.06573px 0px, rgb(233, 58, 157) 3.07402px 8.45875px 0px, rgb(233, 58, 157) 2.11714px 8.74744px 0px, rgb(233, 58, 157) 1.13414px 8.92825px 0px, rgb(233, 58, 157) 0.137162px 8.99895px 0px, rgb(233, 58, 157) -0.861512px 8.95867px 0px, rgb(233, 58, 157) -1.84956px 8.8079px 0px, rgb(233, 58, 157) -2.8148px 8.5485px 0px, rgb(233, 58, 157) -3.74532px 8.18368px 0px, rgb(233, 58, 157) -4.62965px 7.71792px 0px, rgb(233, 58, 157) -5.45689px 7.15698px 0px, rgb(233, 58, 157) -6.21682px 6.50777px 0px, rgb(233, 58, 157) -6.90009px 5.77831px 0px, rgb(233, 58, 157) -7.49825px 4.97757px 0px, rgb(233, 58, 157) -8.00394px 4.11545px 0px, rgb(233, 58, 157) -8.41092px 3.20258px 0px, rgb(233, 58, 157) -8.71416px 2.2502px 0px, rgb(233, 58, 157) -8.90993px 1.27008px 0px, rgb(233, 58, 157) -8.99582px 0.274291px 0px, rgb(233, 58, 157) -8.97076px -0.72488px 0px, rgb(233, 58, 157) -8.83507px -1.71511px 0px, rgb(233, 58, 157) -8.59041px -2.68419px 0px, rgb(233, 58, 157) -8.23981px -3.62017px 0px, rgb(233, 58, 157) -7.78758px -4.51149px 0px, rgb(233, 58, 157) -7.23931px -5.34718px 0px, rgb(233, 58, 157) -6.60176px -6.11692px 0px, rgb(233, 58, 157) -5.88279px -6.81122px 0px, rgb(233, 58, 157) -5.09127px -7.42152px 0px, rgb(233, 58, 157) -4.23696px -7.94029px 0px, rgb(233, 58, 157) -3.33039px -8.36113px 0px, rgb(233, 58, 157) -2.38275px -8.67885px 0px, rgb(233, 58, 157) -1.40572px -8.88954px 0px, rgb(233, 58, 157) -0.411357px -8.99059px 0px, rgb(233, 58, 157) 0.58808px -8.98077px 0px, rgb(233, 58, 157) 1.58026px -8.86018px 0px, rgb(233, 58, 157) 2.55296px -8.63032px 0px, rgb(233, 58, 157) 3.49417px -8.29402px 0px, rgb(233, 58, 157) 4.39229px -7.85543px 0px, rgb(233, 58, 157) 5.23623px -7.31996px 0px, rgb(233, 58, 157) 6.0156px -6.69422px 0px, rgb(233, 58, 157) 6.72078px -5.98591px 0px, rgb(233, 58, 157) 7.34307px -5.20378px 0px, rgb(233, 58, 157) 7.87479px -4.35748px 0px, rgb(233, 58, 157) 8.3094px -3.45743px 0px, rgb(233, 58, 157) 8.64153px -2.51474px 0px, rgb(233, 58, 157) 8.86709px -1.54104px 0px, rgb(233, 58, 157) 8.98328px -0.548328px 0px;
+    }
+    .giftbox{
+        width: 40%;
+        margin-top: -80px !important;
+        margin-left: -100px !important;
+    }
+    .offer{
+        width: 100%;
+    }
+    .offer h1{
+        font-size: 30px !important;
+    }
+    .off{
+        font-size: 30px !important;
+    }
+    .offe{
+        font-size: 15   px !important;
+    }
+    .testimonial-card {
+        width: 95%;
+        background-color: transparent; 
+        border-radius: 1rem;
+        padding: 0px !important;
+        margin-bottom: 1.5rem;
+        border: 1px solid #e93a9d;
+    }
+    .testimonial-text {
+        color: black;
+        font-size: 10px !important;
+        font-weight: 500;
+        line-height: 1.6; 
+        margin-bottom: .5rem !important; 
+    }
+    .accordion-button{
+        font-size: 20px;
+    }
+    .accordion-item{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .foothead{
+        font-size: 20px !important;
+    }
+    .footcontent{
+        font-size: 15px !important;
+    }
+    .portaldivs{
+        width: 100%;
+    }
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+@media (max-width:600px) {
+    .wecpara{
+        font-size: 14px !important;
+        text-align: justify;
+    }
+    .wechead{
+        font-size: 15px !important;
+    }
+    .wecsub{
+        font-size: 15px !important;
+    }
+    .secondbanner{
+        width: 80% !important;
+    }
+    .special{
+        font-size: 30px !important;
+        text-align: center;
+        color: white;
+        letter-spacing: 7px;
+        transform: rotate(-5deg);
+        text-shadow: rgb(233, 58, 157) 9px 0px 0px, rgb(233, 58, 157) 8.9445px 0.997944px 0px, rgb(233, 58, 157) 8.77869px 1.98358px 0px, rgb(233, 58, 157) 8.50461px 2.94475px 0px, rgb(233, 58, 157) 8.12565px 3.86961px 0px, rgb(233, 58, 157) 7.64647px 4.74674px 0px, rgb(233, 58, 157) 7.07299px 5.56533px 0px, rgb(233, 58, 157) 6.41227px 6.31528px 0px, rgb(233, 58, 157) 5.67248px 6.98735px 0px, rgb(233, 58, 157) 4.86272px 7.57324px 0px, rgb(233, 58, 157) 3.99299px 8.06573px 0px, rgb(233, 58, 157) 3.07402px 8.45875px 0px, rgb(233, 58, 157) 2.11714px 8.74744px 0px, rgb(233, 58, 157) 1.13414px 8.92825px 0px, rgb(233, 58, 157) 0.137162px 8.99895px 0px, rgb(233, 58, 157) -0.861512px 8.95867px 0px, rgb(233, 58, 157) -1.84956px 8.8079px 0px, rgb(233, 58, 157) -2.8148px 8.5485px 0px, rgb(233, 58, 157) -3.74532px 8.18368px 0px, rgb(233, 58, 157) -4.62965px 7.71792px 0px, rgb(233, 58, 157) -5.45689px 7.15698px 0px, rgb(233, 58, 157) -6.21682px 6.50777px 0px, rgb(233, 58, 157) -6.90009px 5.77831px 0px, rgb(233, 58, 157) -7.49825px 4.97757px 0px, rgb(233, 58, 157) -8.00394px 4.11545px 0px, rgb(233, 58, 157) -8.41092px 3.20258px 0px, rgb(233, 58, 157) -8.71416px 2.2502px 0px, rgb(233, 58, 157) -8.90993px 1.27008px 0px, rgb(233, 58, 157) -8.99582px 0.274291px 0px, rgb(233, 58, 157) -8.97076px -0.72488px 0px, rgb(233, 58, 157) -8.83507px -1.71511px 0px, rgb(233, 58, 157) -8.59041px -2.68419px 0px, rgb(233, 58, 157) -8.23981px -3.62017px 0px, rgb(233, 58, 157) -7.78758px -4.51149px 0px, rgb(233, 58, 157) -7.23931px -5.34718px 0px, rgb(233, 58, 157) -6.60176px -6.11692px 0px, rgb(233, 58, 157) -5.88279px -6.81122px 0px, rgb(233, 58, 157) -5.09127px -7.42152px 0px, rgb(233, 58, 157) -4.23696px -7.94029px 0px, rgb(233, 58, 157) -3.33039px -8.36113px 0px, rgb(233, 58, 157) -2.38275px -8.67885px 0px, rgb(233, 58, 157) -1.40572px -8.88954px 0px, rgb(233, 58, 157) -0.411357px -8.99059px 0px, rgb(233, 58, 157) 0.58808px -8.98077px 0px, rgb(233, 58, 157) 1.58026px -8.86018px 0px, rgb(233, 58, 157) 2.55296px -8.63032px 0px, rgb(233, 58, 157) 3.49417px -8.29402px 0px, rgb(233, 58, 157) 4.39229px -7.85543px 0px, rgb(233, 58, 157) 5.23623px -7.31996px 0px, rgb(233, 58, 157) 6.0156px -6.69422px 0px, rgb(233, 58, 157) 6.72078px -5.98591px 0px, rgb(233, 58, 157) 7.34307px -5.20378px 0px, rgb(233, 58, 157) 7.87479px -4.35748px 0px, rgb(233, 58, 157) 8.3094px -3.45743px 0px, rgb(233, 58, 157) 8.64153px -2.51474px 0px, rgb(233, 58, 157) 8.86709px -1.54104px 0px, rgb(233, 58, 157) 8.98328px -0.548328px 0px;
+    }
+    .offer{
+        width: 100%;
+    }
+    .offer h1{
+        font-size: 30px !important;
+    }
+    .testimonial-card {
+        width: 95%;
+        background-color: transparent; 
+        border-radius: 1rem;
+        padding: 0px !important;
+        margin-bottom: 1.5rem !important;
+        border: 1px solid #e93a9d;
+    }
+    .testimonial-text {
+        color: black;
+        font-size: 10px !important;
+        font-weight: 500;
+        line-height: 1.6; 
+        margin-bottom: .5rem !important; 
+    }
+    .faq{
+        width: 100%;
+    }
+    .accordion-button{
+        font-size: 10px;
+    }
+    .accordion-item{
+        font-size: 10px;
+        text-align: justify;
+    }
+    .footer-logo{
+        display: block;
+        margin: auto !important;
+    }
+    .foothead{
+        font-size: 20px !important;
+        text-align: center;
+        margin-top: 25px !important;
+    }
+    .footcontent{
+        font-size: 15px !important;
+        text-align: center;
+    }
+    .fotcom{
+        text-align:center !important;
+        font-size: 25px !important;
+    }
+    .impform{
+        width: 100%;
+        border-color: #e93a9d;
+    }
+    .impforms{
+        width: 100%;
+        border-color: #e93a9d;
+    }
+    .portaldivs{
+        width: 100%;
+    }
+    .payment-container {
+        width: 95% !important;
+        margin: 40px auto;
+    }
+    .payment-title {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 15px !important;
+    }
+    .payment-subtitle {
+        text-align: center;
+        margin-bottom: 30px!important ;
+        font-size: 0.9rem;
+    }
+    .payment-section-title {
+        font-weight: bold;
+        margin: 25px 0 15px 0 !important;
+    }
+    .payment-method {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px !important;
+        margin-bottom: 15px !important;
+    }
+    .payment-terms {
+        font-size: 0.85rem;
+        margin: 25px 0 !important;
+    }
+    .confirm-btn {
+        background-color: #ec4899;
+        border: none;
+        padding: 10px 25px !important;
+        border-radius: 25px;
+    }
+    .confirm-btn:hover {
+        background-color: #d61f85;
+    }
+    .form-group {
+        margin-bottom: 15px !important;
+    }
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+@media (min-width:1024px) and (max-width:1439px) {
+    .navitems{
+        font-size: 18px !important;
+    }
+    .wecpara{
+        font-size: 14px !important;
+        text-align: justify;
+    }
+    .wechead{
+        font-size: 20px !important;
+    }
+    .wecsub{
+        font-size: 14px !important;
+    }
+    .secondbanner{
+        width: 80% !important;
+    }
+    .special{
+        font-size: 60px !important;
+        text-align: center;
+        color: white;
+        letter-spacing: 7px;
+        transform: rotate(353deg);
+        text-shadow: rgb(233, 58, 157) 9px 0px 0px, rgb(233, 58, 157) 8.9445px 0.997944px 0px, rgb(233, 58, 157) 8.77869px 1.98358px 0px, rgb(233, 58, 157) 8.50461px 2.94475px 0px, rgb(233, 58, 157) 8.12565px 3.86961px 0px, rgb(233, 58, 157) 7.64647px 4.74674px 0px, rgb(233, 58, 157) 7.07299px 5.56533px 0px, rgb(233, 58, 157) 6.41227px 6.31528px 0px, rgb(233, 58, 157) 5.67248px 6.98735px 0px, rgb(233, 58, 157) 4.86272px 7.57324px 0px, rgb(233, 58, 157) 3.99299px 8.06573px 0px, rgb(233, 58, 157) 3.07402px 8.45875px 0px, rgb(233, 58, 157) 2.11714px 8.74744px 0px, rgb(233, 58, 157) 1.13414px 8.92825px 0px, rgb(233, 58, 157) 0.137162px 8.99895px 0px, rgb(233, 58, 157) -0.861512px 8.95867px 0px, rgb(233, 58, 157) -1.84956px 8.8079px 0px, rgb(233, 58, 157) -2.8148px 8.5485px 0px, rgb(233, 58, 157) -3.74532px 8.18368px 0px, rgb(233, 58, 157) -4.62965px 7.71792px 0px, rgb(233, 58, 157) -5.45689px 7.15698px 0px, rgb(233, 58, 157) -6.21682px 6.50777px 0px, rgb(233, 58, 157) -6.90009px 5.77831px 0px, rgb(233, 58, 157) -7.49825px 4.97757px 0px, rgb(233, 58, 157) -8.00394px 4.11545px 0px, rgb(233, 58, 157) -8.41092px 3.20258px 0px, rgb(233, 58, 157) -8.71416px 2.2502px 0px, rgb(233, 58, 157) -8.90993px 1.27008px 0px, rgb(233, 58, 157) -8.99582px 0.274291px 0px, rgb(233, 58, 157) -8.97076px -0.72488px 0px, rgb(233, 58, 157) -8.83507px -1.71511px 0px, rgb(233, 58, 157) -8.59041px -2.68419px 0px, rgb(233, 58, 157) -8.23981px -3.62017px 0px, rgb(233, 58, 157) -7.78758px -4.51149px 0px, rgb(233, 58, 157) -7.23931px -5.34718px 0px, rgb(233, 58, 157) -6.60176px -6.11692px 0px, rgb(233, 58, 157) -5.88279px -6.81122px 0px, rgb(233, 58, 157) -5.09127px -7.42152px 0px, rgb(233, 58, 157) -4.23696px -7.94029px 0px, rgb(233, 58, 157) -3.33039px -8.36113px 0px, rgb(233, 58, 157) -2.38275px -8.67885px 0px, rgb(233, 58, 157) -1.40572px -8.88954px 0px, rgb(233, 58, 157) -0.411357px -8.99059px 0px, rgb(233, 58, 157) 0.58808px -8.98077px 0px, rgb(233, 58, 157) 1.58026px -8.86018px 0px, rgb(233, 58, 157) 2.55296px -8.63032px 0px, rgb(233, 58, 157) 3.49417px -8.29402px 0px, rgb(233, 58, 157) 4.39229px -7.85543px 0px, rgb(233, 58, 157) 5.23623px -7.31996px 0px, rgb(233, 58, 157) 6.0156px -6.69422px 0px, rgb(233, 58, 157) 6.72078px -5.98591px 0px, rgb(233, 58, 157) 7.34307px -5.20378px 0px, rgb(233, 58, 157) 7.87479px -4.35748px 0px, rgb(233, 58, 157) 8.3094px -3.45743px 0px, rgb(233, 58, 157) 8.64153px -2.51474px 0px, rgb(233, 58, 157) 8.86709px -1.54104px 0px, rgb(233, 58, 157) 8.98328px -0.548328px 0px;
+    }
+    .giftbox{
+        margin-top: -100px !important;
+        margin-left: -120px !important;
+    }
+    .offer{
+        width: 100%;
+    }
+    .offer h1{
+        font-size: 30px !important;
+    }
+    .testimonial-card {
+        width: 95%;
+        background-color: transparent; 
+        border-radius: 1rem;
+        padding: 10px !important;
+        margin-bottom: 1.5rem !important;
+        border: 1px solid #e93a9d;
+    }
+    .testimonial-text {
+        color: black;
+        font-size: 20px !important;
+        font-weight: 500;
+        line-height: 1.6; 
+        margin-bottom: .5rem !important; 
+    }
+    .portaldivs{
+        width: 100%;
+    }
 }
