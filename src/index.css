@@ -271,7 +271,6 @@
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    border: 1px solid black;
 }
 .gallery-item img {
     width: 100%;

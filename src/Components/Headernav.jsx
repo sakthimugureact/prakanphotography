@@ -18,7 +18,7 @@ function Headernav() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="">
-            <Link to="/wedding" className='navitems text-dark fs-5 fw-bolder px-0 px-lg-3 ps-xl-5 pe-xl-5 ms-0 ms-xl-5 text-center' style={{textDecoration:"none"}}>WEDDING</Link>
+            <Link to="/wedding" className='navitems text-dark fs-5 fw-bolder px-0 px-lg-3 ps-xl-4 pe-xl-4 ms-0 ms-xl-5 text-center' style={{textDecoration:"none"}}>WEDDING</Link>
             <Link to="/kids" className='navitems text-dark fs-5 fw-bolder px-0 px-xl-5 px-lg-2 text-center' style={{textDecoration:"none"}}>KIDS</Link>
             <Link to="/photography" className='navitems text-dark fs-5 fw-bolder px-0 px-xl-5 px-lg-2 text-center' style={{textDecoration:"none"}}>PHOTOGRAPHY</Link>
             <Link to="/packages" className='navitems text-dark fs-5 fw-bolder px-0 px-xl-5 px-lg-2 text-center' style={{textDecoration:"none"}}>PACKAGES</Link>

@@ -160,7 +160,7 @@ function Home() {
              <img src="/images/photoedit.png" className="img-fluid d-block mx-auto mb-3" width="50"></img>
               <div className="card-body text-center">
                 <h5 className="card-title fw-bold fs-5">PHOTO EDITING</h5>
-                <p className="card-text fw-semibold fs-6 pt-3">
+                <p className="card-text fw-semibold fs-6 pt-3 mb-5">
                 Our photo editing artistry transforms raw images into captivating visual stories, each pixel infused with your unique blend of technical mastery & artistic expression.
                 </p>
               </div>
