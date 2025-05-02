@@ -1,5 +1,4 @@
 import React from "react";
-import banner from "../assets/images/IMAGES/HOME SCREEN/weddingbanner.png";
 import welcomebanner from "../assets/images/IMAGES/HOME SCREEN/banner2.png";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
@@ -8,15 +7,15 @@ function Home() {
   return (
     <>
       <div className="container-fluid weddingbanner">
-      <div id="carouselExampleAutoplaying" className="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner ">
-    <div className="carousel-item active"  data-bs-interval="1000">
+    <div className="carousel-item active"  data-bs-interval="1500">
       <img src="/images/weddingbanner.png" className="d-block w-100" alt="..."/>
     </div>
-    <div className="carousel-item"  data-bs-interval="2000">
+    <div className="carousel-item"  data-bs-interval="1000">
       <img src="/images/image2.png" className="d-block w-100" alt="..."/>
     </div>
-    <div className="carousel-item"  data-bs-interval="3000">
+    <div className="carousel-item">
       <img src="/images/image3.png" className="d-block w-100" alt="..."/>
     </div>
   </div>
