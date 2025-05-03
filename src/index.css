@@ -467,6 +467,9 @@
 
 
 @media (max-width:600px) {
+    .login-container {
+        width: 100%;
+    }
     .wecpara{
         font-size: 14px !important;
         text-align: justify;
@@ -601,7 +604,7 @@
         font-size: 18px !important;
     }
     .wecpara{
-        font-size: 14px !important;
+        font-size: 18px !important;
         text-align: justify;
     }
     .wechead{
@@ -648,5 +651,8 @@
     }
     .portaldivs{
         width: 100%;
+    }
+    .pack{
+        width: 300px;
     }
 }

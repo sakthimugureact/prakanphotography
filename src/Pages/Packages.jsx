@@ -9,11 +9,11 @@ function Packages() {
     <div className='weddingbanner'>
     <img src="/images/packagebanner.png" className='w-100'/>
     </div>
-    <div className="container  mx-auto p-2 p-md-0">
+    <div className="container-fluid  mx-auto p-2 p-md-0">
     <h3 className='text-center fw-bold mt-5'>Capture Moments That Last a Lifetime</h3>
     <p className='text-center fs-4 mt-4 fw-semibold'>At Prakan Photo Studio, we offer thoughtfully designed packages to suit every occasion <br/> and budget. Whether it's a casual shoot or a grand celebration, we've got you covered.</p>
-    <div className="row mt-5 d-flex gap-4">
-      <div className="col-md-3 pack mx-auto">
+    <div className="row mt-5 d-flex gap-xl-4">
+      <div className="col-md-3  pack mx-auto">
       <Card className="cards" style={{borderRadius:"0"}}>
       <Card.Header className='text-center p-4' style={{background:"#e93a9d",borderRadius:"0"}}>
         <h1 className='fs-1 fw-bold fst-italic text-light'>BASIC</h1>
