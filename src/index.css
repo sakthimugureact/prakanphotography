@@ -653,6 +653,10 @@
         width: 100%;
     }
     .pack{
-        width: 300px;
+        width: 320px;
+        
+    }
+    .cards{
+        height: 950px;
     }
 }

@@ -8,7 +8,7 @@ function Headernav() {
   const [show,setShow] = useState(false)
 
   const [log,setLog] = useState();
-  console.log(log);
+
   
   const [user,setUser] = useState("");
  
