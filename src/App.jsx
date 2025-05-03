@@ -16,6 +16,11 @@ import Groom from './Pages/Groom'
 import Candid from './Pages/Candid'
 import All from './Pages/All'
 import WedShow from './Pages/WedShow'
+import Register from './Pages/Register'
+import Terms from './Components/Terms'
+import Privacy from './Components/Privacy'
+import About from './Components/About'
+import WeddingFlim from './Pages/WeddingFlim'
 
 function App() {
   return (
@@ -39,6 +44,11 @@ function App() {
     <Route path='/success' element={<PaymentSuccess/>}></Route>
     <Route path='/kidshow/:id' element={<Kidshow/>}></Route>
     <Route path='/wedshow/:id' element={<WedShow/>}></Route>
+    <Route path='/register' element={<Register/>}></Route>
+    <Route path='/terms' element={<Terms/>}></Route>    
+    <Route path='/privacy' element={<Privacy/>}></Route>    
+    <Route path='/about' element={<About/>}></Route>    
+    <Route path='/wedflim' element={<WeddingFlim/>}></Route>    
     </Routes>
     </BrowserRouter>
   )

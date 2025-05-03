@@ -15,9 +15,9 @@ function Footer() {
                     <h3 className='text-white fw-bold fs-4 foothead'>Quick Links</h3>
                     <ul className='mt-3 row'>
                         <Link className='text-light text-decoration-none fs-5 fw-bold footcontent' to='/'>Home</Link>
-                        <Link className='text-light text-decoration-none fs-5 fw-bold footcontent' to='/'>About US</Link>
-                        <Link className='text-light text-decoration-none fs-5 fw-bold footcontent' to='/'>Privacy Policy</Link>
-                        <Link className='text-light text-decoration-none fs-5 fw-bold footcontent' to='/'>Terms and Conditions</Link>
+                        <Link className='text-light text-decoration-none fs-5 fw-bold footcontent' to='/about'>About US</Link>
+                        <Link className='text-light text-decoration-none fs-5 fw-bold footcontent' to='/privacy'>Privacy Policy</Link>
+                        <Link className='text-light text-decoration-none fs-5 fw-bold footcontent' to='/terms'>Terms and Conditions</Link>
                        
                     </ul>
                 </div>

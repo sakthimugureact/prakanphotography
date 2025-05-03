@@ -2,20 +2,21 @@ import React from "react";
 import welcomebanner from "../assets/images/IMAGES/HOME SCREEN/banner2.png";
 import { Link } from "react-router-dom";
 import Footer from "../Components/Footer";
+import { Ratio } from "react-bootstrap";
 
 function Home() {
   return (
     <>
       <div className="container-fluid weddingbanner">
-      <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleAutoplaying" className="carousel slide carousel-fade" data-bs-ride="carousel">
   <div className="carousel-inner ">
     <div className="carousel-item active"  data-bs-interval="1500">
       <img src="/images/weddingbanner.png" className="d-block w-100" alt="..."/>
     </div>
-    <div className="carousel-item"  data-bs-interval="1000">
+    <div className="carousel-item"  data-bs-interval="2000">
       <img src="/images/image2.png" className="d-block w-100" alt="..."/>
     </div>
-    <div className="carousel-item">
+    <div className="carousel-item" data-bs-interval="2500">
       <img src="/images/image3.png" className="d-block w-100" alt="..."/>
     </div>
   </div>
@@ -120,11 +121,19 @@ function Home() {
               allowing you to relive the laughter, tears, and love that unfolded
               in real time.
             </p>
-            <Link className="text-decoration-none text-dark fw-semibold fs-5">
+            <Link to="/wedflim" className="text-decoration-none text-dark fw-semibold fs-5">
               BROWSE MORE VIDEOS
             </Link>
           </div>
-          <div className="col-md-6"></div>
+          <div className="col-md-6 p-4">
+         
+<div className="embed-responsive embed-responsive-4by3 ">
+  <video className="embed-responsive-item" controls  style={{width:"100%"}}>
+    <source src="/images/video1.mp4" type="video/mp4"/>
+    Your browser does not support the video tag.
+  </video>
+</div>
+          </div>
         </div>
         <div className="ease mt-4 mb-5 pt-5 text-center">
           <h4 className="mb-4 fw-semibold">EASE AND SIMPLE</h4>

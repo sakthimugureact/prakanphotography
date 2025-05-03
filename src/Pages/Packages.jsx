@@ -53,7 +53,7 @@ function Packages() {
       <div className="col-md-3 pack mx-auto">
       <Card className="cards" style={{borderRadius:"0"}}>
       <Card.Header className='text-center p-4' style={{background:"#e93a9d",borderRadius:"0"}}>
-        <h1 className='fs-1 fw-bold fst-italic text-light'>STANDARD</h1>
+        <h1 className='fs-1 fw-bold fst-italic text-light'>PREMIUM</h1>
         <h3 className='fs-4 fw-bold fst-italic text-light'>PER EVENT</h3>
       </Card.Header>
       <Card.Body className=''>

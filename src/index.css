@@ -15,6 +15,16 @@
     padding: 2px 7px !important;
     margin-right: 50px !important;
 }
+.logoutbtn{
+    background-color: transparent;
+    border: none;
+    color: #e93a9d;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    padding: 2px 7px !important;
+    margin-right: 50px !important;
+}
 .loginbtn:hover{
     background-color: white;
     color: #e93a9d;
@@ -286,6 +296,88 @@
 }
 .gallery-item.wide {
     grid-column: span 2;
+}
+.login-container {
+    width: 30%;
+    margin: 2rem auto !important;
+    padding: 20px !important;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+.btn-login {
+    background-color: #FF1493;
+    border: none;
+    padding: 12px !important;
+}
+.btn-login:hover {
+    background-color: #FF69B4;
+}
+.form-control {
+    padding: 12px !important;
+}
+.register-link {
+    color: #FF1493;
+    text-decoration: none;
+}
+.register-link:hover {
+    color: #FF69B4;
+}
+.registers{
+    margin-top: 150px !important;
+}
+.signup-container {
+    max-width: 800px;
+    margin: auto !important;
+    padding: 20px !important;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+.btn-signup {
+    background-color: #FF1493;
+    border: none;
+    padding: 12px !important;
+}
+.btn-signup:hover {
+    background-color: #FF69B4;
+}
+.form-control {
+    padding: 12px !important;
+    margin-bottom: 15px !important;
+}
+.login-link {
+    color: #FF1493;
+    text-decoration: none;
+}
+.login-link:hover {
+    color: #FF69B4;
+}
+.usericon{
+    padding: 10px 20px !important;
+    margin-right: 10px !important;
+    border-radius: 100% !important;
+    background-color: #e93a9d;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.usericons{
+    width: 4%;
+    padding: 6px !important;
+    margin-right: 10px !important;
+    border-radius: 50% !important;
+    background-color: #e93a9d;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 

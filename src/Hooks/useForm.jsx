@@ -43,7 +43,41 @@ function useForm() {
         amount:''
       })
 
-      
+      const [reg,setreg] = useState({
+        name:'',
+        email:'',
+        password:'',
+        cmpass:''
+      })
+
+      const[regerr,setRegerr] = useState({
+        name:'',
+        email:'',
+        password:'',
+        cmpass:''
+      })
+
+      const [loginvalues,setLoginvalues] = useState({
+        email:"",
+        password:""
+      })
+      const [loginerr,setLoginerr] = useState({
+        email:"",
+        password:""
+      })
+
+      const registerVaidation = (e) =>{
+        const {name,value} = e.target;
+        setreg({...reg,[name]:value});
+        setRegerr({...regerr,[name]:''})
+      }
+
+      const loginValidation = (e) =>{
+        const {name,value} = e.target;
+        setLoginvalues({...loginvalues,[name]:value});
+        setLoginerr({...loginerr,[name]:""})
+      }
+
       const detailValidation = (e) =>{
         const {name,value} = e.target;
         setDetails({...details,[name]:value});
@@ -54,6 +88,63 @@ function useForm() {
         setValues({ ...values, [name] : value });
         setErr({ ...err, [name]: '' }); 
       };
+
+      const validateRegister = () =>{
+        let newErr = {};
+        let isValid = true;
+
+        if (!reg.name.trim()) {
+          newErr.name = 'Name Required';
+          isValid = false;
+        }
+
+        if (!reg.email.trim()) {
+          newErr.email = 'Email Required';
+          isValid = false;
+        } 
+        else if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(reg.email)) {
+          newErr.email = 'Enter a Valid Email';
+          isValid = false;
+        }
+
+        if(!reg.password.trim()){
+          newErr.password="Password Required";
+          isValid = false
+        }
+
+        if(!reg.cmpass.trim()){
+          newErr.cmpass="Password Required";
+          isValid = false
+        }
+        else if(reg.password!==reg.cmpass){
+          newErr.cmpass="Password Not Matched";
+          isValid = false
+        }
+        setRegerr(newErr);
+        return isValid;
+      }
+
+      const validateLogin = (e) =>{
+        let newErr = {};
+        let isVal = true;
+  
+        if (!loginvalues.email.trim()) {
+          newErr.email = 'Email Required';
+          isVal = false;
+        } 
+        else if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(loginvalues.email)) {
+          newErr.email = 'Enter a Valid Email';
+          isVal = false;
+        }
+  
+        if (!loginvalues.password.trim()) {
+          newErr.password = 'Password Required';
+          isVal = false;
+        } 
+  
+        setLoginerr(newErr)
+        return isVal;
+      }
 
       const validateDetails = () =>{
         let newErr = {};
@@ -154,7 +245,7 @@ function useForm() {
         return isValid;
       };
   
- return{formValidation,values,err,validateForm,details,detailValidation,validateDetails,error}
+ return{formValidation,values,err,validateForm,details,detailValidation,validateDetails, setLoginerr,error,reg,regerr,registerVaidation,validateRegister,loginvalues,loginerr,loginValidation,validateLogin}
 
 }
 
